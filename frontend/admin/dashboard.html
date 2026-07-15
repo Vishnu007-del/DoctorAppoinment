@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | MediCare</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-hospital"></i>
+
+            <h2>MediCare</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+
+                <a href="#">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-user-doctor"></i>
+
+                    Doctors
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    Patients
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                    Appointments
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-file-medical"></i>
+
+                    Reports
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="#">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="login.html">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+
+        <div class="topbar">
+
+            <h2>
+
+                Admin Dashboard
+
+            </h2>
+
+            <div class="topbar-right">
+
+                <button id="themeToggle">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <img src="../images/admin.png"
+                     alt="Admin">
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <section class="dashboard-cards">
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-user-doctor"></i>
+
+                <h3>120</h3>
+
+                <p>Doctors</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>2,480</h3>
+
+                <p>Patients</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <h3>650</h3>
+
+                <p>Appointments</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <h3>₹4.2L</h3>
+
+                <p>Revenue</p>
+
+            </div>
+
+        </section>
+                <!-- =========================
+             RECENT APPOINTMENTS
+        ========================== -->
+
+        <section class="dashboard-content">
+
+            <div class="appointments-table">
+
+                <div class="section-header">
+
+                    <h2>Recent Appointments</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Patient</th>
+
+                            <th>Doctor</th>
+
+                            <th>Date</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Rahul Sharma</td>
+
+                            <td>Dr. Priya</td>
+
+                            <td>15 Jul 2026</td>
+
+                            <td><span class="status completed">Completed</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Arun Kumar</td>
+
+                            <td>Dr. Karthik</td>
+
+                            <td>16 Jul 2026</td>
+
+                            <td><span class="status pending">Pending</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Sneha</td>
+
+                            <td>Dr. Ram</td>
+
+                            <td>16 Jul 2026</td>
+
+                            <td><span class="status cancelled">Cancelled</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Akash</td>
+
+                            <td>Dr. Anitha</td>
+
+                            <td>17 Jul 2026</td>
+
+                            <td><span class="status completed">Completed</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- =========================
+                RECENT PATIENTS
+            ========================== -->
+
+            <div class="recent-patients">
+
+                <div class="section-header">
+
+                    <h2>New Patients</h2>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Rahul Sharma</h4>
+
+                        <p>Registered Today</p>
+
+                    </div>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Sneha</h4>
+
+                        <p>Registered Yesterday</p>
+
+                    </div>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Arun Kumar</h4>
+
+                        <p>2 Days Ago</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+                RECENT ACTIVITY
+        ========================== -->
+
+        <section class="activity-card">
+
+            <h2>Recent Activities</h2>
+
+            <ul>
+
+                <li>✅ Dr. Priya added a new prescription.</li>
+
+                <li>📅 New appointment booked by Rahul Sharma.</li>
+
+                <li>👨‍⚕️ Dr. Karthik joined the hospital.</li>
+
+                <li>🧑 New patient account created.</li>
+
+                <li>📊 Monthly report generated successfully.</li>
+
+            </ul>
+
+        </section>
+        <!-- =========================
+      ANALYTICS & NOTIFICATIONS
+========================== -->
+
+<section class="bottom-grid">
+
+    <div class="analytics-card">
+
+        <div class="section-header">
+
+            <h2>Hospital Performance</h2>
+
+        </div>
+
+        <div class="progress-box">
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>Appointments Completed</span>
+
+                    <span>92%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress completed-progress"></div>
+
+                </div>
+
+            </div>
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>Doctor Availability</span>
+
+                    <span>81%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress doctor-progress"></div>
+
+                </div>
+
+            </div>
+
+            <div class="progress-item">
+
+                <div class="progress-title">
+
+                    <span>Patient Satisfaction</span>
+
+                    <span>96%</span>
+
+                </div>
+
+                <div class="progress-bar">
+
+                    <div class="progress patient-progress"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="notification-card">
+
+        <div class="section-header">
+
+            <h2>Notifications</h2>
+
+        </div>
+
+        <div class="notification-item">
+
+            🔔 New appointment booked.
+
+        </div>
+
+        <div class="notification-item">
+
+            👨‍⚕️ Doctor profile updated.
+
+        </div>
+
+        <div class="notification-item">
+
+            💊 Prescription uploaded.
+
+        </div>
+
+        <div class="notification-item">
+
+            📄 Monthly report generated.
+
+        </div>
+
+        <div class="notification-item">
+
+            🧑 New patient registered.
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

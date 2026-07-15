@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Registration | MediCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="register-page">
+
+    <!-- Left Side -->
+
+    <div class="register-left">
+
+        <div class="overlay"></div>
+
+        <div class="left-content">
+
+            <i class="fa-solid fa-hospital-user"></i>
+
+            <h1>Create Your Account</h1>
+
+            <p>
+
+                Register once to book appointments,
+                consult doctors online, receive digital
+                prescriptions, and securely manage your
+                medical records.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="register-right">
+
+        <div class="register-card">
+
+            <h2>Patient Registration</h2>
+
+            <p>Please fill in your details.</p>
+
+            <form id="registerForm">
+
+                <div class="form-grid">
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            placeholder="Full Name"
+                            required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            placeholder="Email Address"
+                            required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            placeholder="Mobile Number"
+                            required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-cake-candles"></i>
+
+                        <input
+                            type="date"
+                            required>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-venus-mars"></i>
+
+                        <select required>
+
+                            <option value="">Select Gender</option>
+
+                            <option>Male</option>
+
+                            <option>Female</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <select required>
+
+                            <option value="">Blood Group</option>
+
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+                                <!-- Address -->
+
+                <div class="input-box full-width">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <textarea
+                        rows="4"
+                        placeholder="Enter Your Address"
+                        required></textarea>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="regPassword"
+                        placeholder="Password"
+                        required>
+
+                    <span id="showRegPassword">
+
+                        <i class="fa-solid fa-eye"></i>
+
+                    </span>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Password"
+                        required>
+
+                </div>
+
+                <!-- Profile Photo -->
+
+                <div class="upload-box full-width">
+
+                    <label>
+
+                        <i class="fa-solid fa-camera"></i>
+
+                        Upload Profile Photo
+
+                    </label>
+
+                    <input
+                        type="file"
+                        id="profileImage"
+                        accept="image/*">
+
+                    <img
+                        id="previewImage"
+                        src="../images/default-user.png"
+                        alt="Preview">
+
+                </div>
+
+                <!-- Terms -->
+
+                <div class="terms full-width">
+
+                    <label>
+
+                        <input type="checkbox" required>
+
+                        I agree to the Terms &
+                        Privacy Policy
+
+                    </label>
+
+                </div>
+
+                <!-- Register -->
+
+                <button
+                    type="submit"
+                    class="login-submit full-width">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="register-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login
+
+                </a>
+
+            </div>
+
+            <a
+                href="../role-selection.html"
+                class="back-home">
+
+                ← Back to Role Selection
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard | MediCare</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <h2>MediCare</h2>
+
+        </div>
+
+        <ul>
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Today's Appointments
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i>
+                    My Patients
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Medical Records
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-prescription"></i>
+                    Prescriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-video"></i>
+                    Video Consultation
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+            <li>
+                <a href="../doctor/login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main -->
+
+    <main class="main-content">
+
+        <div class="topbar">
+
+            <h2>
+
+                Welcome, Dr. Priya 👋
+
+            </h2>
+
+            <div class="topbar-right">
+
+                <button id="themeToggle">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+                <img src="../images/default-user.png">
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+
+        <section class="dashboard-cards">
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-calendar-day"></i>
+
+                <h3>18</h3>
+
+                <p>Today's Appointments</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-users"></i>
+
+                <h3>540</h3>
+
+                <p>Total Patients</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-file-prescription"></i>
+
+                <h3>245</h3>
+
+                <p>Prescriptions</p>
+
+            </div>
+
+            <div class="dash-card">
+
+                <i class="fa-solid fa-star"></i>
+
+                <h3>4.9</h3>
+
+                <p>Doctor Rating</p>
+
+            </div>
+                    <!-- =========================
+            MAIN CONTENT
+        ========================== -->
+
+        <section class="dashboard-content">
+
+            <!-- Today's Appointments -->
+
+            <div class="appointments-table">
+
+                <div class="section-header">
+
+                    <h2>Today's Appointments</h2>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Patient</th>
+                            <th>Time</th>
+                            <th>Problem</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Rahul Sharma</td>
+                            <td>09:00 AM</td>
+                            <td>Fever</td>
+                            <td><span class="status completed">Completed</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Sneha</td>
+                            <td>10:30 AM</td>
+                            <td>Diabetes</td>
+                            <td><span class="status pending">Pending</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Arun Kumar</td>
+                            <td>12:00 PM</td>
+                            <td>Heart Checkup</td>
+                            <td><span class="status pending">Pending</span></td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Priya</td>
+                            <td>03:30 PM</td>
+                            <td>General Consultation</td>
+                            <td><span class="status cancelled">Cancelled</span></td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Patient List -->
+
+            <div class="recent-patients">
+
+                <div class="section-header">
+
+                    <h2>My Patients</h2>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Rahul Sharma</h4>
+
+                        <p>Age : 32</p>
+
+                    </div>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Sneha</h4>
+
+                        <p>Age : 27</p>
+
+                    </div>
+
+                </div>
+
+                <div class="patient-item">
+
+                    <img src="../images/default-user.png">
+
+                    <div>
+
+                        <h4>Arun Kumar</h4>
+
+                        <p>Age : 46</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+            PRESCRIPTION REQUESTS
+        ========================== -->
+
+        <section class="activity-card">
+
+            <h2>Recent Medical Activities</h2>
+
+            <ul>
+
+                <li>💊 Prescription sent to Rahul Sharma.</li>
+
+                <li>🩺 Medical report updated for Sneha.</li>
+
+                <li>📅 Appointment confirmed for Arun Kumar.</li>
+
+                <li>📄 Lab report received.</li>
+
+                <li>🎥 Video consultation completed.</li>
+
+            </ul>
+            </section>
+
+<!-- =========================
+        ANALYTICS
+========================== -->
+
+<section class="bottom-grid">
+                    <!-- =========================
+                ANALYTICS
+        ========================== -->
+
+        <section class="bottom-grid">
+
+            <div class="analytics-card">
+
+                <div class="section-header">
+
+                    <h2>Weekly Performance</h2>
+
+                </div>
+
+                <div class="progress-box">
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+
+                            <span>Appointments Completed</span>
+
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress completed-progress"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+
+                            <span>Patient Satisfaction</span>
+
+                            <span>95%</span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress patient-progress"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="progress-item">
+
+                        <div class="progress-title">
+
+                            <span>Video Consultations</span>
+
+                            <span>78%</span>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div class="progress doctor-progress"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Notifications -->
+
+            <div class="notification-card">
+
+                <div class="section-header">
+
+                    <h2>Notifications</h2>
+
+                </div>
+
+                <div class="notification-item">
+
+                    📅 New appointment at 4:30 PM
+
+                </div>
+
+                <div class="notification-item">
+
+                    💊 Prescription uploaded successfully
+
+                </div>
+
+                <div class="notification-item">
+
+                    🧪 New lab report received
+
+                </div>
+
+                <div class="notification-item">
+
+                    🎥 Video consultation starts in 15 minutes
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+                QUICK ACTIONS
+        ========================== -->
+
+        <section class="quick-actions">
+
+            <h2>Quick Actions</h2>
+
+            <div class="action-grid">
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-file-prescription"></i>
+
+                    <h3>Write Prescription</h3>
+
+                </div>
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-file-medical"></i>
+
+                    <h3>Add Medical Record</h3>
+
+                </div>
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-video"></i>
+
+                    <h3>Start Video Call</h3>
+
+                </div>
+
+                <div class="action-card">
+
+                    <i class="fa-solid fa-calendar-plus"></i>
+
+                    <h3>Schedule Follow-up</h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
+
