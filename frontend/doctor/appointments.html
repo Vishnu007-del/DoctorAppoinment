@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Appointments | MediCare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="appointments-container">
+
+    <div class="appointments-card">
+
+        <div class="page-title">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <h1>Doctor Appointments</h1>
+
+            <p>Manage your appointments efficiently.</p>
+
+        </div>
+
+        <div class="appointment-top">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchAppointment"
+                    placeholder="Search Patient">
+
+            </div>
+
+            <input
+                type="date"
+                id="appointmentDate">
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="appointment-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Patient</th>
+
+                        <th>Date</th>
+
+                        <th>Time</th>
+
+                        <th>Reason</th>
+
+                        <th>Status</th>
+
+                        <th>Actions</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="appointmentTable">
+
+                    <tr>
+
+                        <td>Gayathri</td>
+
+                        <td>18-07-2026</td>
+
+                        <td>09:30 AM</td>
+
+                        <td>General Checkup</td>
+
+                        <td>
+
+                            <span class="status pending">
+
+                                Pending
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="approve-btn">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </button>
+
+                            <button class="reject-btn">
+
+                                <i class="fa-solid fa-xmark"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Rahul</td>
+
+                        <td>18-07-2026</td>
+
+                        <td>11:00 AM</td>
+
+                        <td>Fever</td>
+
+                        <td>
+
+                            <span class="status approved">
+
+                                Approved
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                            <button class="complete-btn">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Priya</td>
+
+                        <td>19-07-2026</td>
+
+                        <td>02:00 PM</td>
+
+                        <td>Diabetes Review</td>
+
+                        <td>
+
+                            <span class="status completed">
+
+                                Completed
+
+                            </span>
+
+                        </td>
+
+                        <td>
+
+                            <button class="view-btn">
+
+                                <i class="fa-solid fa-eye"></i>
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="button-group">
+
+            <a href="dashboard.html" class="back-btn">
+
+                ← Back to Dashboard
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="page-actions">
+
+    <button id="themeToggle" class="theme-btn">
+
+        <i class="fa-solid fa-moon"></i>
+
+    </button>
+
+</div>
+
+<script src="../js/doctor.js"></script>
+
+</body>
+
+</html>
