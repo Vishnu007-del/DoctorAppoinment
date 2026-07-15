@@ -505,11 +505,71 @@ if (adminForm) {
 
             alert("Login Successful!");
 
-            window.location.href = "dashboard.html";
+            window.location.href = "admin-dashboard.html";
 
         } else {
 
             alert("Invalid Admin ID or Password");
+
+        }
+
+    });
+
+}
+/*====================================
+        DOCTOR LOGIN
+====================================*/
+
+const doctorForm = document.getElementById("doctorLoginForm");
+
+if (doctorForm) {
+
+    doctorForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const id = document.getElementById("doctorId").value.trim();
+        const password = document.getElementById("doctorPassword").value.trim();
+
+        if (id === "doctor" && password === "doctor123") {
+
+            alert("Doctor Login Successful!");
+
+            window.location.href = "doctor-dashboard.html";
+
+        } else {
+
+            alert("Invalid Doctor ID or Password");
+
+        }
+
+    });
+
+}
+/*====================================
+        PATIENT LOGIN
+====================================*/
+
+const patientForm = document.getElementById("patientLoginForm");
+
+if (patientForm) {
+
+    patientForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        const id = document.getElementById("patientId").value.trim();
+        const password = document.getElementById("patientPassword").value.trim();
+
+        if (id === "patient" && password === "patient123") {
+
+            alert("Patient Login Successful!");
+
+            window.location.href = "patient-dashboard.html";
+
+        } else {
+
+            alert("Invalid Patient ID or Password");
 
         }
 
