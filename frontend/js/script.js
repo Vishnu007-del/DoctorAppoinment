@@ -14,17 +14,30 @@ window.addEventListener("scroll", () => {
 
 });
 
-topBtn.addEventListener("click", () => {
+if (topBtn) {
 
-    window.scrollTo({
+    topBtn.style.display = "none";
 
-        top: 0,
+    window.addEventListener("scroll", () => {
 
-        behavior: "smooth"
+        if (window.scrollY > 300) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
 
     });
 
-});
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}
 
 // Hide button initially
 topBtn.style.display = "none";
@@ -36,19 +49,23 @@ topBtn.style.display = "none";
 
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
+if (header) {
 
-    if (window.scrollY > 50) {
+    window.addEventListener("scroll", () => {
 
-        header.style.boxShadow = "0 10px 30px rgba(0,0,0,.15)";
+        if (window.scrollY > 50) {
 
-    } else {
+            header.style.boxShadow = "0 10px 30px rgba(0,0,0,.15)";
 
-        header.style.boxShadow = "0 5px 20px rgba(0,0,0,.08)";
+        } else {
 
-    }
+            header.style.boxShadow = "0 5px 20px rgba(0,0,0,.08)";
 
-});
+        }
+
+    });
+
+}
 
 
 // =============================
@@ -179,12 +196,15 @@ const menuBtn = document.getElementById("menuBtn");
 
 const navbar = document.getElementById("navbar");
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn && navbar) {
 
-    navbar.classList.toggle("active");
+    menuBtn.addEventListener("click", () => {
 
-});
+        navbar.classList.toggle("active");
 
+    });
+
+}
 // ============================
 // THEME TOGGLE
 // ============================
@@ -505,7 +525,7 @@ if (adminForm) {
 
             alert("Login Successful!");
 
-            window.location.href = "admin-dashboard.html";
+            window.location.href = "dashboard.html";
 
         } else {
 
@@ -535,7 +555,7 @@ if (doctorForm) {
 
             alert("Doctor Login Successful!");
 
-            window.location.href = "doctor-dashboard.html";
+            window.location.href = "dashboard.html";
 
         } else {
 
@@ -565,7 +585,7 @@ if (patientForm) {
 
             alert("Patient Login Successful!");
 
-            window.location.href = "patient-dashboard.html";
+            window.location.href = "dashboard.html";
 
         } else {
 
